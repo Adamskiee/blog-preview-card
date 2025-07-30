@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+*{
+    font-family: "Outfit", sans-serif;
+    color: #111;
+}
+
+.container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 381px;
+    width: 100%;
+    border: 1px solid #111;
+    box-shadow: 8px 8px #000;
+}
+
+.img {
+    border-radius: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+.content .tag {
+    padding: 4px 12px;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 800;
+    display: inline-block;
+    background-color: #F4D04E;
+}
+.content .published-date {
+    font-size: 14px;
+}
+.content .title {
+    font-size: 24px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.content .title:hover {
+    color:#F4D04E;
+}
+.content .description {
+    color: #6b6b6b;
+    font-size: 16px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.author img {
+    height: 32px;
+    width: 32px;
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        max-width: 327px;
+    }
+    .content .tag,
+    .content .published-date {
+        font-size: 12px;
+    }
+    .content .title {
+        font-size: 20px;
+    }
+    .content .description {
+        font-size: 14px;
+    }
+}
